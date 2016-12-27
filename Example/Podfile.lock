@@ -1,0 +1,16 @@
+PODS:
+  - CJDataBase (0.1.0)
+
+DEPENDENCIES:
+  - CJDataBase (from `../`)
+
+EXTERNAL SOURCES:
+  CJDataBase:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CJDataBase: 6de339bebceae881a6d85c66db2d6fc7413017cd
+
+PODFILE CHECKSUM: 35229014fa22f606e8bc96bef107c26d0236b898
+
+COCOAPODS: 1.0.0
