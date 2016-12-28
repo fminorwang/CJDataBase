@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "summary": "A short description of CJDataBase.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/CJDataBase",
+  "homepage": "https://github.com/fminorwang/CJDataBase",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,12 @@
     "fminor": "563145721@qq.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/CJDataBase.git",
+    "git": "~/Documents/mygit/CJDataBase",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "CJDataBase/Classes/**/*"
+  "source_files": "CJDataBase/Classes/**/*",
+  "frameworks": "CoreData"
 }
