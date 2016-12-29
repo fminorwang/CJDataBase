@@ -120,12 +120,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "CJDataBase_Example" */;
 			buildPhases = (
-				F0331DCE5A072E71596D7F50 /* 📦 Check Pods Manifest.lock */,
+				F0331DCE5A072E71596D7F50 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				0F9823EA3C89A2E5946AECB4 /* 📦 Embed Pods Frameworks */,
-				5C5397F99CB414856715CCD4 /* 📦 Copy Pods Resources */,
+				0F9823EA3C89A2E5946AECB4 /* [CP] Embed Pods Frameworks */,
+				5C5397F99CB414856715CCD4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,7 +143,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
@@ -185,14 +185,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0F9823EA3C89A2E5946AECB4 /* 📦 Embed Pods Frameworks */ = {
+		0F9823EA3C89A2E5946AECB4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,14 +200,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CJDataBase_Example/Pods-CJDataBase_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5C5397F99CB414856715CCD4 /* 📦 Copy Pods Resources */ = {
+		5C5397F99CB414856715CCD4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,19 +215,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CJDataBase_Example/Pods-CJDataBase_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F0331DCE5A072E71596D7F50 /* 📦 Check Pods Manifest.lock */ = {
+		F0331DCE5A072E71596D7F50 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -277,8 +277,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -322,8 +324,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -342,6 +346,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -350,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 251332A0C5513D1DA2200836 /* Pods-CJDataBase_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SR9HWZ3HDL;
 				INFOPLIST_FILE = CJDataBase/Info.plist;
@@ -365,6 +371,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 60B70EA8FC5B8539CA75E9F0 /* Pods-CJDataBase_Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SR9HWZ3HDL;
 				INFOPLIST_FILE = CJDataBase/Info.plist;

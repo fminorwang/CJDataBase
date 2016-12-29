@@ -1,7 +1,7 @@
 import Foundation
 import CoreData
 
-open class CJDataBase: NSObject {
+open class CJDataCache: NSObject {
     public init(identity: String) {
         super.init()
         _initializeCoreData(with: identity)
@@ -77,9 +77,7 @@ open class CJDataBase: NSObject {
     }
     
     private func _initializeCoreData(with identity: String) {
-        guard let _bundle: Bundle = Bundle(for: CJDataBase.self) else {
-            return
-        }
+        let _bundle: Bundle = Bundle(for: CJDataCache.self)
         guard let _modelURL = _bundle.url(forResource: "CJDataModel", withExtension: "momd") else {
             return
         }

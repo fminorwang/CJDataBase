@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var _label: UILabel!
     
-    private let _dataManager = CJDataBase(identity: "CJDataBaseExample")
+    fileprivate let _dataManager = CJDataCache(identity: "CJDataBaseExample")
     
     override func viewDidLoad() {
         super.viewDidLoad()
