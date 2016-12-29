@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B271B61F945617EC5761A44C1F51E04 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F62877F6F8B2EC922EE9414A5FFAFFC1 /* CoreData.framework */; };
+		1F4EAC87F1A238319EB16F95AEF1123A /* CJDataBase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 250D41EBD96B72EBE88853FF02516BDC /* CJDataBase-dummy.m */; };
 		2FB55A76273430C2B5FA33EF477707BF /* Pods-CJDataBase_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0DCEFDDDAE041F8E5B838E4297C8C5C /* Pods-CJDataBase_Example-dummy.m */; };
-		314E4706573E335A09AAF6C8C9258CEC /* CJDataBase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ECF9EBBCAF6F5304850A1C10DC907D6 /* CJDataBase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5A6449B6EA44561098D401E30D4D8826 /* CJDataBase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC88C5AB187C9D6489826B81EA0C8507 /* CJDataBase-dummy.m */; };
+		35535561EE8DDE2B0399379170271DA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D07389E2A49322AA4B20E3817DD9B326 /* Foundation.framework */; };
 		6FA3385B1762AE0655F4786A568A4A34 /* Pods-CJDataBase_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29407B3126DC652C6A3B505F5DF8C9E4 /* Pods-CJDataBase_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7486CF24C0EBFEF14994A167DF2A3BFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D07389E2A49322AA4B20E3817DD9B326 /* Foundation.framework */; };
+		740D16B9D61461970365F56855551911 /* CJDataBase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 53C605712161C6D1BF678B1BBFD8579A /* CJDataBase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89ED8DF942E2F1F31744AE090EE13E90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D07389E2A49322AA4B20E3817DD9B326 /* Foundation.framework */; };
-		BF1FDBDE87733E77968C9EBC66E6911C /* CJDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED85ABDC048FCD932865CBF9C593CC26 /* CJDataBase.swift */; };
-		CD5AA0996BD146F82B25EC7E291D4C11 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F62877F6F8B2EC922EE9414A5FFAFFC1 /* CoreData.framework */; };
+		8E4F8846AC505E2E3C50B91CB2778F1B /* CJDataModel.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 1B0ACDAFFF87487551D2BF56949445F4 /* CJDataModel.xcdatamodeld */; };
+		EED9982C0BC398023923A584B37EFB3D /* CJDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91BFEF818135DEDF96D3628CB213F44 /* CJDataBase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,7 +23,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C8468D48E99DAFFED65C4A2F97162EBC;
+			remoteGlobalIDString = B5C5FFB3DD5F04E73DD5119FAB156626;
 			remoteInfo = CJDataBase;
 		};
 /* End PBXContainerItemProxy section */
@@ -32,33 +33,34 @@
 		047E170415012516D72BA758D6370FB4 /* CJDataBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CJDataBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		058C656C992856212ABD57CD53FE6BB6 /* Pods-CJDataBase_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CJDataBase_Example.modulemap"; sourceTree = "<group>"; };
 		0E4111BF586B94F8287B2C0D1362D199 /* Pods_CJDataBase_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CJDataBase_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		250D41EBD96B72EBE88853FF02516BDC /* CJDataBase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CJDataBase-dummy.m"; sourceTree = "<group>"; };
 		29407B3126DC652C6A3B505F5DF8C9E4 /* Pods-CJDataBase_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CJDataBase_Example-umbrella.h"; sourceTree = "<group>"; };
-		3ECF9EBBCAF6F5304850A1C10DC907D6 /* CJDataBase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CJDataBase-umbrella.h"; sourceTree = "<group>"; };
 		48E751CE1D28C8EC86351864452F9996 /* Pods-CJDataBase_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CJDataBase_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4E7316D53BFB1817A6422D2FC7CD7BDB /* Pods-CJDataBase_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CJDataBase_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		6ACCA0E24D5392AC8371615DB00369EE /* CJDataBase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CJDataBase.xcconfig; sourceTree = "<group>"; };
+		53C605712161C6D1BF678B1BBFD8579A /* CJDataBase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CJDataBase-umbrella.h"; sourceTree = "<group>"; };
+		6A5477746922A0841EA4AC28384281CA /* CJDataModel.xcdatamodel */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcdatamodel; path = CJDataModel.xcdatamodel; sourceTree = "<group>"; };
+		75655E00814EB67385367726EAE6EEA0 /* CJDataBase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CJDataBase.modulemap; sourceTree = "<group>"; };
 		83CA466D37404D12071E25EC19D1C191 /* Pods-CJDataBase_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CJDataBase_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A9192E466C240C9442EB5E808F776B0A /* CJDataBase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CJDataBase-prefix.pch"; sourceTree = "<group>"; };
-		AE2E68AD2553CAF0E38243DD975E1B29 /* CJDataBase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CJDataBase.modulemap; sourceTree = "<group>"; };
+		94A6F8874770C97DE3083A408099AD82 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4164A0CC274EF4D3F773E617239C3E9 /* Pods-CJDataBase_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CJDataBase_Example-resources.sh"; sourceTree = "<group>"; };
 		D07389E2A49322AA4B20E3817DD9B326 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DC1835E6921ECCA7CA71A63AA84CCBFF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8772EA3AF1A8B0188EFA232E85E9174 /* CJDataBase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CJDataBase-prefix.pch"; sourceTree = "<group>"; };
+		D91BFEF818135DEDF96D3628CB213F44 /* CJDataBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CJDataBase.swift; sourceTree = "<group>"; };
+		DAB00FFC4A1AE3C9DAF061335106B908 /* CJDataBase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CJDataBase.xcconfig; sourceTree = "<group>"; };
 		E0DCEFDDDAE041F8E5B838E4297C8C5C /* Pods-CJDataBase_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CJDataBase_Example-dummy.m"; sourceTree = "<group>"; };
-		ED85ABDC048FCD932865CBF9C593CC26 /* CJDataBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CJDataBase.swift; sourceTree = "<group>"; };
 		EE48B4A46AE4A37B8D884789D0C1FE75 /* Pods-CJDataBase_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CJDataBase_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F34F04521417EBB3F350FEBE699BD402 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F62877F6F8B2EC922EE9414A5FFAFFC1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
-		FC88C5AB187C9D6489826B81EA0C8507 /* CJDataBase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CJDataBase-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D4BDD3702A5F2EE2FB62A2E43F54E903 /* Frameworks */ = {
+		03F759A095430540F7639B6EEA79A1B2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD5AA0996BD146F82B25EC7E291D4C11 /* CoreData.framework in Frameworks */,
-				7486CF24C0EBFEF14994A167DF2A3BFE /* Foundation.framework in Frameworks */,
+				0B271B61F945617EC5761A44C1F51E04 /* CoreData.framework in Frameworks */,
+				35535561EE8DDE2B0399379170271DA9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,36 +75,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C9B8ECD96BC3BB19896BE1A2E14D2DB /* CJDataBase */ = {
+		0B4104B25F034E89BFDF94886C5FAA70 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				D4CFD5A4651E9E8FB68C035AD1E87C6A /* Classes */,
+				1B0ACDAFFF87487551D2BF56949445F4 /* CJDataModel.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		3190D579D6D112D8E18FBE0CE9472713 /* CJDataBase */ = {
+			isa = PBXGroup;
+			children = (
+				0B4104B25F034E89BFDF94886C5FAA70 /* CoreData */,
 			);
 			path = CJDataBase;
-			sourceTree = "<group>";
-		};
-		16436F489660FEDF087272DFC67EA4FE /* CJDataBase */ = {
-			isa = PBXGroup;
-			children = (
-				0C9B8ECD96BC3BB19896BE1A2E14D2DB /* CJDataBase */,
-				41BCAF9E91E18D94881A89E20C32FB1F /* Support Files */,
-			);
-			name = CJDataBase;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		41BCAF9E91E18D94881A89E20C32FB1F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				AE2E68AD2553CAF0E38243DD975E1B29 /* CJDataBase.modulemap */,
-				6ACCA0E24D5392AC8371615DB00369EE /* CJDataBase.xcconfig */,
-				FC88C5AB187C9D6489826B81EA0C8507 /* CJDataBase-dummy.m */,
-				A9192E466C240C9442EB5E808F776B0A /* CJDataBase-prefix.pch */,
-				3ECF9EBBCAF6F5304850A1C10DC907D6 /* CJDataBase-umbrella.h */,
-				DC1835E6921ECCA7CA71A63AA84CCBFF /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/CJDataBase";
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -122,10 +108,21 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		4951A8F1E6E9D1CEE11262BBA5187FE7 /* Development Pods */ = {
+		4ACFBE82B2FA4BBD73F711D1CB28F9B2 /* CJDataBase */ = {
 			isa = PBXGroup;
 			children = (
-				16436F489660FEDF087272DFC67EA4FE /* CJDataBase */,
+				9CA3AF040553F5183F8413B56905DB5B /* CJDataBase */,
+				CF25432EA113CB3B42B9B4A847C64FF8 /* Resources */,
+				8F05AE54ED2A07996472E2B3F136F60D /* Support Files */,
+			);
+			name = CJDataBase;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		51B75E97A06D1DC8F68EF4A1BAD755B9 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4ACFBE82B2FA4BBD73F711D1CB28F9B2 /* CJDataBase */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -134,11 +131,41 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				4951A8F1E6E9D1CEE11262BBA5187FE7 /* Development Pods */,
+				51B75E97A06D1DC8F68EF4A1BAD755B9 /* Development Pods */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				B557D59B2CA3CC3EE8337BD287D32829 /* Products */,
 				CFF90E72623BA73401CA82DDD768B6E4 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		86C42D575F6ABBEAA7AFEFD80C2BCCC6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D91BFEF818135DEDF96D3628CB213F44 /* CJDataBase.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8F05AE54ED2A07996472E2B3F136F60D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				75655E00814EB67385367726EAE6EEA0 /* CJDataBase.modulemap */,
+				DAB00FFC4A1AE3C9DAF061335106B908 /* CJDataBase.xcconfig */,
+				250D41EBD96B72EBE88853FF02516BDC /* CJDataBase-dummy.m */,
+				D8772EA3AF1A8B0188EFA232E85E9174 /* CJDataBase-prefix.pch */,
+				53C605712161C6D1BF678B1BBFD8579A /* CJDataBase-umbrella.h */,
+				94A6F8874770C97DE3083A408099AD82 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CJDataBase";
+			sourceTree = "<group>";
+		};
+		9CA3AF040553F5183F8413B56905DB5B /* CJDataBase */ = {
+			isa = PBXGroup;
+			children = (
+				86C42D575F6ABBEAA7AFEFD80C2BCCC6 /* Classes */,
+			);
+			path = CJDataBase;
 			sourceTree = "<group>";
 		};
 		B557D59B2CA3CC3EE8337BD287D32829 /* Products */ = {
@@ -150,20 +177,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		CF25432EA113CB3B42B9B4A847C64FF8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3190D579D6D112D8E18FBE0CE9472713 /* CJDataBase */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		CFF90E72623BA73401CA82DDD768B6E4 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				F3DF069443DD9B66661125ACE64D2709 /* Pods-CJDataBase_Example */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		D4CFD5A4651E9E8FB68C035AD1E87C6A /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				ED85ABDC048FCD932865CBF9C593CC26 /* CJDataBase.swift */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		F3DF069443DD9B66661125ACE64D2709 /* Pods-CJDataBase_Example */ = {
@@ -195,11 +222,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A63598FF7916D962725DA3EFBC4FDCC3 /* Headers */ = {
+		765EB237471CACD6D13A2FC855B2FE71 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				314E4706573E335A09AAF6C8C9258CEC /* CJDataBase-umbrella.h in Headers */,
+				740D16B9D61461970365F56855551911 /* CJDataBase-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,13 +251,14 @@
 			productReference = 0E4111BF586B94F8287B2C0D1362D199 /* Pods_CJDataBase_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C8468D48E99DAFFED65C4A2F97162EBC /* CJDataBase */ = {
+		B5C5FFB3DD5F04E73DD5119FAB156626 /* CJDataBase */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F56BDBAF8763184B24FF24014CC66765 /* Build configuration list for PBXNativeTarget "CJDataBase" */;
+			buildConfigurationList = F6F6ADB9E6C91F013FD38297ED24EC1D /* Build configuration list for PBXNativeTarget "CJDataBase" */;
 			buildPhases = (
-				51CF7D0291E0AB555D6B4C9EAA0D77F9 /* Sources */,
-				D4BDD3702A5F2EE2FB62A2E43F54E903 /* Frameworks */,
-				A63598FF7916D962725DA3EFBC4FDCC3 /* Headers */,
+				7805C7860232E0DEE5A43282BF603750 /* Sources */,
+				03F759A095430540F7639B6EEA79A1B2 /* Frameworks */,
+				ED1E37E37F2BF2A95CDAB1D7ED4F564A /* Resources */,
+				765EB237471CACD6D13A2FC855B2FE71 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -250,10 +278,7 @@
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
 				TargetAttributes = {
-					4BE7BF4E634345C25F59293AE6107741 = {
-						LastSwiftMigration = 0810;
-					};
-					C8468D48E99DAFFED65C4A2F97162EBC = {
+					B5C5FFB3DD5F04E73DD5119FAB156626 = {
 						LastSwiftMigration = 0810;
 					};
 				};
@@ -270,19 +295,30 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C8468D48E99DAFFED65C4A2F97162EBC /* CJDataBase */,
+				B5C5FFB3DD5F04E73DD5119FAB156626 /* CJDataBase */,
 				4BE7BF4E634345C25F59293AE6107741 /* Pods-CJDataBase_Example */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		ED1E37E37F2BF2A95CDAB1D7ED4F564A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E4F8846AC505E2E3C50B91CB2778F1B /* CJDataModel.xcdatamodeld in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		51CF7D0291E0AB555D6B4C9EAA0D77F9 /* Sources */ = {
+		7805C7860232E0DEE5A43282BF603750 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A6449B6EA44561098D401E30D4D8826 /* CJDataBase-dummy.m in Sources */,
-				BF1FDBDE87733E77968C9EBC66E6911C /* CJDataBase.swift in Sources */,
+				1F4EAC87F1A238319EB16F95AEF1123A /* CJDataBase-dummy.m in Sources */,
+				EED9982C0BC398023923A584B37EFB3D /* CJDataBase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +336,7 @@
 		9CF502AA2ACF901F9B543B298777361D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CJDataBase;
-			target = C8468D48E99DAFFED65C4A2F97162EBC /* CJDataBase */;
+			target = B5C5FFB3DD5F04E73DD5119FAB156626 /* CJDataBase */;
 			targetProxy = 932E20277F310E57016332236D4DB11B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -344,37 +380,6 @@
 			};
 			name = Release;
 		};
-		22E0054FFF0DF9658BC9B6FAE42D4785 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6ACCA0E24D5392AC8371615DB00369EE /* CJDataBase.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CJDataBase/CJDataBase-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CJDataBase/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CJDataBase/CJDataBase.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = CJDataBase;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		42484052C47E78C059E0E6D22696B1B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EE48B4A46AE4A37B8D884789D0C1FE75 /* Pods-CJDataBase_Example.release.xcconfig */;
@@ -408,6 +413,37 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		89D103B9D2665CD554B6A4DB8429D2B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAB00FFC4A1AE3C9DAF061335106B908 /* CJDataBase.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CJDataBase/CJDataBase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CJDataBase/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CJDataBase/CJDataBase.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CJDataBase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		A4F27A4357C9ADF8E05B446ACDDCEF7A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -443,6 +479,36 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		CBF32822F35B5675AD56B43C822D5E7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAB00FFC4A1AE3C9DAF061335106B908 /* CJDataBase.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CJDataBase/CJDataBase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CJDataBase/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CJDataBase/CJDataBase.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CJDataBase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -486,36 +552,6 @@
 			};
 			name = Debug;
 		};
-		F85E8191A5EC5BA39B949027235F5E58 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6ACCA0E24D5392AC8371615DB00369EE /* CJDataBase.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CJDataBase/CJDataBase-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CJDataBase/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CJDataBase/CJDataBase.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = CJDataBase;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -528,11 +564,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F56BDBAF8763184B24FF24014CC66765 /* Build configuration list for PBXNativeTarget "CJDataBase" */ = {
+		F6F6ADB9E6C91F013FD38297ED24EC1D /* Build configuration list for PBXNativeTarget "CJDataBase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				22E0054FFF0DF9658BC9B6FAE42D4785 /* Debug */,
-				F85E8191A5EC5BA39B949027235F5E58 /* Release */,
+				89D103B9D2665CD554B6A4DB8429D2B4 /* Debug */,
+				CBF32822F35B5675AD56B43C822D5E7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -547,6 +583,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1B0ACDAFFF87487551D2BF56949445F4 /* CJDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6A5477746922A0841EA4AC28384281CA /* CJDataModel.xcdatamodel */,
+			);
+			currentVersion = 6A5477746922A0841EA4AC28384281CA /* CJDataModel.xcdatamodel */;
+			path = CJDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 }

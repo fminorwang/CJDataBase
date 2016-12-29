@@ -19,5 +19,6 @@
     "ios": "8.0"
   },
   "source_files": "CJDataBase/Classes/**/*",
+  "resources": "CJDataBase/CoreData/**/*",
   "frameworks": "CoreData"
 }

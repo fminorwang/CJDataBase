@@ -14,7 +14,7 @@ open class CJDataBase: NSObject {
         guard let _mo = _getManagedObject(for: key) else {
             return nil
         }
-        let _data: Data = _mo.data as! Data
+        let _data: Data = _mo.value(forKey: "data") as! Data
         let _unarchiver = NSKeyedUnarchiver(forReadingWith: _data)
         return _unarchiver.decodeObject() as! NSObject?
     }
@@ -30,13 +30,13 @@ open class CJDataBase: NSObject {
         } else {
             guard let _mo = _getManagedObject(for: key) else {
                 // insert
-                let _bean = NSEntityDescription.insertNewObject(forEntityName: _innerBeanEntity, into: _context!) as! CJInnerBean
+                let _bean = NSEntityDescription.insertNewObject(forEntityName: _innerBeanEntity, into: _context!)
                 let _dataToBeSaved = NSMutableData()
                 let _archiver = NSKeyedArchiver(forWritingWith: _dataToBeSaved)
                 _archiver.encodeRootObject(data!)
                 _archiver.finishEncoding()
-                _bean.data = _dataToBeSaved
-                _bean.key = key
+                _bean.setValue(_dataToBeSaved, forKey: "data")
+                _bean.setValue(key, forKey: "key")
                 _save()
                 return
             }
@@ -46,12 +46,12 @@ open class CJDataBase: NSObject {
             let _archiver = NSKeyedArchiver(forWritingWith: _dataToBeSaved)
             _archiver.encodeRootObject(data!)
             _archiver.finishEncoding()
-            _mo.data = _dataToBeSaved
+            _mo.setValue(_dataToBeSaved, forKey: "data")
             _save()
         }
     }
     
-    private func _getManagedObject(for key:String) -> CJInnerBean? {
+    private func _getManagedObject(for key:String) -> NSManagedObject? {
         let _request = NSFetchRequest<NSFetchRequestResult>(entityName: _innerBeanEntity)
         _request.predicate = NSPredicate(format: "key == %@", key)
         do {
@@ -61,14 +61,14 @@ open class CJDataBase: NSObject {
             if _beans.count == 0 {
                 return nil
             }
-            return _beans[0] as? CJInnerBean
+            return _beans[0] as? NSManagedObject
         } catch {
             NSLog("CJDataBase fetch object ERROR: %@", error.localizedDescription)
             return nil
         }
     }
     
-    fileprivate func _save() {
+    private func _save() {
         do {
             try _context?.save()
         } catch {
@@ -77,8 +77,10 @@ open class CJDataBase: NSObject {
     }
     
     private func _initializeCoreData(with identity: String) {
-        let _podBundle = Bundle(for: CJDataBase.self)
-        guard let _modelURL = _podBundle.url(forResource: "CJDataModel", withExtension: "momd") else {
+        guard let _bundle: Bundle = Bundle(for: CJDataBase.self) else {
+            return
+        }
+        guard let _modelURL = _bundle.url(forResource: "CJDataModel", withExtension: "momd") else {
             return
         }
         
