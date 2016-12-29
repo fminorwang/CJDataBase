@@ -12,8 +12,8 @@
     "fminor": "563145721@qq.com"
   },
   "source": {
-    "git": "~/Documents/mygit/CJDataBase",
-    "tag": "0.1.0"
+    "git": "https://github.com/fminorwang/CJDataBase.git",
+    "tag": "0.1.0_0"
   },
   "platforms": {
     "ios": "8.0"

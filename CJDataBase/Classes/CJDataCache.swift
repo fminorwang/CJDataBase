@@ -1,3 +1,11 @@
+//
+//  CJDataBase.swift
+//  Pods
+//
+//  Created by fminor on 29/12/2016.
+//
+//
+
 import Foundation
 import CoreData
 
@@ -10,7 +18,7 @@ open class CJDataCache: NSObject {
     private let _innerBeanEntity = "CJInnerBean"
     private var _context: NSManagedObjectContext?
     
-    public func data(for key:String) -> NSObject? {
+    open func data(for key:String) -> NSObject? {
         guard let _mo = _getManagedObject(for: key) else {
             return nil
         }
@@ -19,7 +27,7 @@ open class CJDataCache: NSObject {
         return _unarchiver.decodeObject() as! NSObject?
     }
     
-    public func setData(_ data:NSCoding?, for key:String) -> Void {
+    open func setData(_ data:NSCoding?, for key:String) -> Void {
         if data == nil {
             // delete
             guard let _mo = _getManagedObject(for: key) else {

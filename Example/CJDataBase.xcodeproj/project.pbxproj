@@ -120,12 +120,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "CJDataBase_Example" */;
 			buildPhases = (
-				F0331DCE5A072E71596D7F50 /* [CP] Check Pods Manifest.lock */,
+				9EDB6649A46787BE27E13C52 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				0F9823EA3C89A2E5946AECB4 /* [CP] Embed Pods Frameworks */,
-				5C5397F99CB414856715CCD4 /* [CP] Copy Pods Resources */,
+				F0572C18AB7A04C5213F276A /* [CP] Embed Pods Frameworks */,
+				6057CCB9CBFC01B597DB5074 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,22 +185,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0F9823EA3C89A2E5946AECB4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CJDataBase_Example/Pods-CJDataBase_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5C5397F99CB414856715CCD4 /* [CP] Copy Pods Resources */ = {
+		6057CCB9CBFC01B597DB5074 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -215,7 +200,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CJDataBase_Example/Pods-CJDataBase_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F0331DCE5A072E71596D7F50 /* [CP] Check Pods Manifest.lock */ = {
+		9EDB6649A46787BE27E13C52 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -228,6 +213,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F0572C18AB7A04C5213F276A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CJDataBase_Example/Pods-CJDataBase_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -355,7 +355,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 251332A0C5513D1DA2200836 /* Pods-CJDataBase_Example.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SR9HWZ3HDL;
 				INFOPLIST_FILE = CJDataBase/Info.plist;
@@ -371,7 +371,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 60B70EA8FC5B8539CA75E9F0 /* Pods-CJDataBase_Example.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SR9HWZ3HDL;
 				INFOPLIST_FILE = CJDataBase/Info.plist;
